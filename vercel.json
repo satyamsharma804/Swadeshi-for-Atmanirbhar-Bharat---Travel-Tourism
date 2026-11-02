@@ -1,22 +1,15 @@
 {
   "version": 2,
-  "builds": [
+  "buildCommand": "cd Frontend && npm install && npm run build",
+  "outputDirectory": "Frontend/dist",
+  "rewrites": [
     {
-      "src": "api/index.cjs", 
-      "use": "@vercel/node",
-      "config": {
-        "runtime": "nodejs24.x" 
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/index.cjs" 
+      "source": "/api/(.*)",
+      "destination": "/api/index.cjs"
     },
     {
-      "src": "/(.*)",
-      "dest": "/Frontend/dist/index.html" 
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }

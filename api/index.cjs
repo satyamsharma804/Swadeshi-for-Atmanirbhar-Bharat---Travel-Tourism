@@ -30,20 +30,27 @@ app.use(cors({
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
-// Route Registration (Pointing to the 'default' export of each route file)
-app.use('/auth', authRoutes.default);
-app.use('/user', userRoutes.default);
-app.use('/booking', bookingRoutes.default);
-app.use('/admin', adminRoutes.default);
-app.use('/review', reviewRoutes.default);
-app.use('/query', queryRoutes.default);
-app.use('/destination', destinationRoutes.default);
+// Route Registration (Supporting both /endpoint and /api/endpoint)
+const routes = [
+  { path: '/auth', handler: authRoutes.default },
+  { path: '/user', handler: userRoutes.default },
+  { path: '/booking', handler: bookingRoutes.default },
+  { path: '/admin', handler: adminRoutes.default },
+  { path: '/review', handler: reviewRoutes.default },
+  { path: '/query', handler: queryRoutes.default },
+  { path: '/destination', handler: destinationRoutes.default }
+];
+
+routes.forEach(({ path, handler }) => {
+  app.use(path, handler);
+  app.use(`/api${path}`, handler);
+});
 
 // Health check and Root endpoints
-app.get('/health', (req, res) => {
+app.get(['/health', '/api/health'], (req, res) => {
   res.json({ status: 'ok', message: 'Travel Planner API is running' });
 });
-app.get('/', (req, res) => {
+app.get(['/', '/api'], (req, res) => {
   res.json({ message: 'Travel Planner API Root' });
 });
 
