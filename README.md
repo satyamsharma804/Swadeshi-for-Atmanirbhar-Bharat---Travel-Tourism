@@ -7,92 +7,189 @@
 [![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS-v4.0-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-> **Swadeshi Travel Planner** is a modern, enterprise-grade full-stack platform built to champion domestic Indian tourism under the national vision of **Atmanirbhar Bharat**. Pairing an interactive 3D frontend with a resilient cloud backend, the platform features an intelligent **AI Trip Planner Chatbot**, end-to-end booking configurations, simulated payments, email automation, cryptographic security, and a unified administrative control center.
+> **Swadeshi Travel Planner** is an enterprise-grade full-stack web application designed to promote domestic Indian tourism in alignment with the national vision of **Atmanirbhar Bharat** (Self-Reliant India). Built on **React 19**, **Vite 6**, **Tailwind CSS v4**, **Node.js / Express**, and **MongoDB Atlas**, the platform features an intelligent **AI Trip Planner Chatbot**, 3D interactive visualizations, a multi-step booking pipeline, simulated payment gateways, automated email notifications, and an executive administrative management portal.
 
 ---
 
 ## 🌐 Live Deployments
 
-- 🚀 **Live Web Application (Frontend):** [https://swadeshi-for-atmanirbhar-bharat-tra.vercel.app/](https://swadeshi-for-atmanirbhar-bharat-tra.vercel.app/)
-- ⚙️ **Live REST API (Backend):** [https://swadeshi-for-atmanirbhar-bharat-travel.onrender.com](https://swadeshi-for-atmanirbhar-bharat-travel.onrender.com)
-- 🗄️ **Database Cluster:** MongoDB Atlas Cloud (`tour_planner`)
+| Service | Environment | Live Link | Status |
+| :--- | :--- | :--- | :---: |
+| **Frontend Application** | **Vercel Edge** | [https://swadeshi-for-atmanirbhar-bharat-tra.vercel.app/](https://swadeshi-for-atmanirbhar-bharat-tra.vercel.app/) | ![Live](https://img.shields.io/badge/Status-Operational-brightgreen) |
+| **REST API Backend** | **Render Web Service** | [https://swadeshi-for-atmanirbhar-bharat-travel.onrender.com](https://swadeshi-for-atmanirbhar-bharat-travel.onrender.com) | ![Live](https://img.shields.io/badge/Status-Operational-brightgreen) |
+| **Cloud Database** | **MongoDB Atlas Cluster** | `tour_planner` (AWS Mumbai Region) | ![Connected](https://img.shields.io/badge/Status-Connected-brightgreen) |
 
 ---
 
-## 🚀 Key Features
+## 📖 Detailed Project Overview & Explanation
 
-### 🤖 1. Swadeshi AI Trip Planner Chatbot
-- **Interactive Multi-Mode Assistant:** Floating AI travel assistant offering conversational planning and quick-form itinerary generation.
-- **Custom Budget & Group Logic:** Tailors recommendations based on duration (days), party size, travel style (Budget / Moderate / Luxury), and transit modes (Train, Flight, Road Trip).
-- **Day-by-Day Route Plans:** Automatically drafts daily morning/afternoon/evening schedules, highlights local culinary specialties, and calculates accurate expense estimates.
+### 1. The Vision & Problem Statement
+Traditional travel aggregators often favor high-commission commercial hotel chains and international packages, leaving domestic Indian circuits, cultural heritage sites, and local homestays underrepresented. Furthermore, travelers frequently face:
+- **Itinerary Paralysis:** Spending hours scouring multiple blogs to figure out travel durations, day-wise plans, and budget allocations.
+- **Hidden Costs:** Opaque pricing models where taxes, service charges, and companion fees appear at the last checkout screen.
+- **Fragmented Workflows:** Booking hotels on one site, activities on another, and transit separately without a unified itinerary.
 
-### 🎨 2. Modern 3D & Responsive Interface
-- **React 19 + Tailwind CSS v4:** High-performance, responsive layout optimized across mobile, tablet, and widescreen monitors.
-- **Three.js & Framer Motion:** Embedded 3D visuals using `@react-three/fiber` and `@react-three/drei` combined with spring animations, glassmorphic dropdowns, and parallax tilt effects.
-- **Interactive Catalogs:** Curated tourist circuits, adventure activities (water sports, paragliding, river rafting), and heritage stay accommodations.
+### 2. The Swadeshi Solution
+**Swadeshi Travel Planner** eliminates these barriers by providing a unified, domestic-first platform that:
+1. **Celebrates Incredible India:** Curates iconic and emerging Indian destinations—from the golden deserts of Rajasthan and serene backwaters of Kerala to the spiritual ghats of Varanasi and snow-clad valleys of Himachal.
+2. **Provides Instant AI Itineraries:** Features an embedded **AI Trip Planner** that drafts custom day-wise schedules, transport recommendations (Train, Flight, Road), and expense breakdowns in seconds.
+3. **Delivers End-to-End Execution:** Allows travelers to discover destinations, customize stay dates, manage companions, select adventure activities, and simulate payments in one seamless pipeline.
+4. **Empowers Administrators:** Gives platform managers real-time control over bookings, customer reviews, support queries, and operational revenue metrics.
+
+---
+
+## 🏗️ System Architecture & Data Flow
+
+```mermaid
+flowchart TD
+    Client["Client Browser (React 19 + Vite 6 + Tailwind CSS v4)"]
+    Vercel["Vercel Edge Network (Static Hosting & Edge Rewrites)"]
+    Render["Render Web Service (Node.js + Express REST API)"]
+    Atlas[("MongoDB Atlas Cloud Database")]
+    Nodemailer["Nodemailer (SMTP Transactional Mail Server)"]
+
+    Client -->|HTTPS Requests| Vercel
+    Vercel -->|Direct API Proxy: /api/*| Render
+    Render -->|Mongoose ODM Queries| Atlas
+    Render -->|Automated HTML Emails| Nodemailer
+    Nodemailer -->|Deliver to Inbox| Client
+```
+
+### Architectural Highlights
+- **Client-Side Routing:** Managed via **React Router v7** with Single-Page Application (SPA) efficiency and scroll-restoration.
+- **Proxy Configuration:** `vercel.json` rewrites all `/api/*` traffic transparently to the Render backend web service, completely resolving Cross-Origin Resource Sharing (CORS) latency and errors.
+- **Database Clustering:** Hosted on **MongoDB Atlas** with automated failover, replica sets, and strict schema validation through Mongoose.
+
+---
+
+## 🧩 Deep Dive into Core Functional Modules
+
+### 🤖 1. Swadeshi AI Trip Planner & Itinerary Engine
+The platform includes an intelligent travel assistant available on every page:
+- **Dual Planning Modes:**
+  - **Quick Itinerary Generator:** An interactive form taking destination, trip duration (1–15 days), budget style (Budget, Moderate, Luxury), travel party size, and transit preference (Train, Flight, Road).
+  - **Conversational Assistant:** Direct chat interface answering regional travel questions, weather queries, packing tips, and local food specialties.
+- **Algorithmic Output:**
+  - Day-by-Day schedule (Morning, Afternoon, Evening highlights).
+  - Realistic cost breakdown (Stay, Food, Sightseeing, Transit).
+  - Must-try culinary delicacies and insider travel tips.
+- **REST Endpoints:** Powered by `/api/chatbot/itinerary` and `/api/chatbot/message`.
+
+### 🎨 2. Interactive 3D Frontend & Visual Experience
+- **Three.js Particle Canvas:** Built with `@react-three/fiber` and `@react-three/drei` to render interactive floating 3D particle spheres responding to cursor movements.
+- **Tailwind CSS v4 & Framer Motion:** Fluid spring transitions, glassmorphic dropdowns with click-outside detection, and parallax cards (`react-parallax-tilt`).
+- **Rich Catalogs:** Dedicated views for curated Indian destinations, thrilling adventure activities (scuba diving, river rafting, desert safaris), and authentic heritage stays.
 
 ### 📅 3. Multi-Step Reservation Pipeline
-- **Smart Date & Duration Calculation:** Calendar date-picker with automatic nights counter and per-night cost calculation.
-- **Companion Registry:** Add and manage travel companions with dynamic age validation and activity add-ons.
-- **Simulated Payment Gateway:** Multi-channel payment screen featuring instant UPI QR Code generation (`qrcode.react`), Cards, Net Banking, and instant booking ID dispatch.
+- **Smart Date Engine:** Dynamic calendar date picker computing total trip duration and per-night accommodation rates in real time.
+- **Companion Management:** Dynamic traveler registry with age verification and customized activity add-ons.
+- **Live Price Aggregator:** Instant itemized calculation of base tariff, companion charges, activity fees, and taxes before checkout.
 
-### 🔐 4. Cryptographic Security & Privacy
-- **Bcrypt Password Hashing:** All user passwords are salt-hashed using **bcryptjs (10 rounds)** before persisting to MongoDB.
-- **Zero Plain-Text Storage:** Strict database schemas prevent plain passwords or sensitive credentials from ever being stored or exposed.
-- **Protected Routing:** Token-based authentication and role-based route guards protecting `/admin` and private booking records.
+### 💳 4. Simulated Payment Gateway & QR Subsystem
+- **Dynamic UPI QR Code:** Generates real-time scannable UPI QR codes using `qrcode.react` with exact transaction amount and booking references (`SWD-XXXXXX`).
+- **Multi-Method Support:** Simulates Credit/Debit Cards, Net Banking, and Wallet settlements with instant status confirmation.
 
-### 📧 5. Automated Transactional Emails
-- **Nodemailer Automation:** Immediate delivery of responsive HTML emails for:
-  - Account welcome notifications
-  - Instant booking confirmations with full reservation summary
-  - Secure OTP password recovery tokens
+### 📧 5. Automated Transactional Email Subsystem
+- **Nodemailer Integration:** Triggered automatically upon critical lifecycle events:
+  - **Welcome Email:** Dispatched immediately upon user registration.
+  - **Booking Confirmation:** Formatted responsive HTML receipt with booking reference, destination, check-in dates, and total amount paid.
+  - **Password Recovery:** Time-sensitive One-Time Password (OTP) dispatched for account recovery.
 
-### 🛡️ 6. Unified Administrative Control Center
-- **Executive Metrics:** Real-time visibility into platform gross revenue, total reservations, verified customer reviews, and open queries.
-- **Booking Management:** Review incoming booking requests with one-click **Approve** and **Reject** status transitions.
-- **Query Resolution Desk:** Centralized support dashboard to review customer inquiries and send official admin responses.
+### 🛡️ 6. Unified Administrative Control Center (`/admin`)
+- **Executive KPI Dashboard:** Real-time metrics tracking Gross Booking Revenue (₹), Total Bookings, Active Users, and Customer Queries.
+- **Booking Management Desk:** Admins can review incoming traveler reservations and update statuses (**Approve** or **Reject**) with instant database synchronization.
+- **Customer Query Resolution Desk (`/admin/queries`):** Support tickets submitted by users (`/user-queries`) can be reviewed and resolved with administrative notes.
 
----
-
-## 🛠️ Tech Stack Architecture
-
-| Layer | Technologies |
-| :--- | :--- |
-| **Frontend Framework** | **React 19**, **Vite 6**, **React Router v7** |
-| **Styling & Animation** | **Tailwind CSS v4**, **Framer Motion**, Lucide React, React Icons |
-| **3D & Visuals** | **Three.js**, `@react-three/fiber`, `@react-three/drei`, React Parallax Tilt |
-| **Backend Runtime** | **Node.js (ES Modules)**, **Express.js** |
-| **Cloud Database** | **MongoDB Atlas Cloud** with **Mongoose ODM** |
-| **Authentication & Crypto**| **Bcrypt.js** (Salt factor 10), Token validation |
-| **Notification Engine** | **Nodemailer** with custom HTML email dispatchers |
-| **Hosting & CI/CD** | **Vercel** (Frontend edge + Proxy rewrites) & **Render** (Node.js Web Service) |
+### 🔐 7. Cryptographic Security & Hardening
+- **Bcrypt Hashing:** Passwords hashed with cryptographic salt (10 rounds) via `bcryptjs`.
+- **Zero Plain-Text Storage:** Strict schema definitions and database cleanup scripts completely prevent plain-text password exposure.
+- **Protected Routing:** Token-based authentication guards admin dashboards and private booking histories.
 
 ---
 
-## 📊 Pre-Seeded Real-World Dataset
+## 🛠️ Complete Tech Stack
 
-The production database is seeded with authentic Indian travel records via `backend/seedLargeDataset.js`:
+| Layer | Technologies | Purpose |
+| :--- | :--- | :--- |
+| **Frontend Framework** | **React 19**, **Vite 6** | Ultra-fast client-side rendering & optimized bundling |
+| **Routing** | **React Router v7** | Client-side declarative routing & protected route guards |
+| **Styling** | **Tailwind CSS v4** | Modern utility-first CSS engine with dark neon themes |
+| **Animations & 3D** | **Framer Motion**, **Three.js**, `@react-three/fiber` | Spring physics, particle canvas, and interactive UI |
+| **Icons & UI** | **React Icons**, **Lucide React**, `qrcode.react` | Vector iconography and dynamic QR code generation |
+| **Backend Framework** | **Node.js (ES Modules)**, **Express.js** | Scalable REST API architecture and route handlers |
+| **Database & ODM** | **MongoDB Atlas Cloud**, **Mongoose** | High-availability cloud document store and schemas |
+| **Authentication & Crypto**| **Bcrypt.js** (Salt factor 10) | One-way cryptographic password hashing |
+| **Email Services** | **Nodemailer** (SMTP) | Automated transactional HTML email dispatch |
+| **Cloud Hosting & CI/CD** | **Vercel** & **Render** | Edge static hosting, serverless rewrites, and 24/7 web services |
 
-| Category | Volume | Details |
+---
+
+## 📊 Pre-Seeded Production Dataset
+
+To reflect enterprise-scale operations, the database is pre-seeded with verified real-world Indian travel data via `backend/seedLargeDataset.js`:
+
+| Dataset Category | Record Count | Sample Scope |
 | :--- | :---: | :--- |
-| **Registered Travelers** | **84 Users** | Complete profiles with bcrypt password security |
-| **Completed & Active Trips** | **120 Bookings** | Historic, confirmed, and upcoming bookings across Indian circuits |
-| **Verified Reviews** | **66 Reviews** | Star ratings and authentic traveler feedback |
-| **Support Desk Inquiries** | **50 Queries** | Customer support tickets with official admin replies |
+| **Registered Travelers** | **84 Profiles** | Realistic Indian user profiles with encrypted bcrypt credentials |
+| **Reservations & Trips** | **120 Bookings** | Historic, confirmed, and upcoming bookings across Indian circuits |
+| **Traveler Reviews** | **66 Reviews** | Star ratings and authentic customer feedback on destinations |
+| **Support Desk Inquiries** | **50 Queries** | Customer support tickets with official administrative responses |
 
 ---
 
-## 📁 Repository Structure
+## 🔌 REST API Endpoints Specification
+
+### Authentication & User Routes (`/api/auth`)
+| Method | Endpoint | Description | Auth Required |
+| :--- | :--- | :--- | :---: |
+| `POST` | `/api/auth/register` | Register new user account with bcrypt hashing | No |
+| `POST` | `/api/auth/login` | Authenticate user credentials and return session token | No |
+| `POST` | `/api/auth/forgot-password` | Generate and dispatch email OTP token | No |
+| `POST` | `/api/auth/verify-otp` | Validate recovery OTP | No |
+| `POST` | `/api/auth/reset-password` | Update password with new bcrypt hash | No |
+
+### AI Trip Planner Routes (`/api/chatbot`)
+| Method | Endpoint | Description | Auth Required |
+| :--- | :--- | :--- | :---: |
+| `POST` | `/api/chatbot/itinerary` | Generate tailored day-wise itinerary & expense plan | No |
+| `POST` | `/api/chatbot/message` | AI travel conversational assistant | No |
+
+### Booking Routes (`/api/bookings`)
+| Method | Endpoint | Description | Auth Required |
+| :--- | :--- | :--- | :---: |
+| `POST` | `/api/bookings` | Create a new reservation with companions | Yes |
+| `GET` | `/api/bookings/my-bookings` | Fetch logged-in user's reservation history | Yes |
+| `GET` | `/api/bookings/:id` | Fetch detailed booking receipt | Yes |
+
+### Administrative Routes (`/api/admin`)
+| Method | Endpoint | Description | Auth Required |
+| :--- | :--- | :--- | :---: |
+| `GET` | `/api/admin/stats` | Fetch total platform turnover, users, and booking counts | Yes (Admin) |
+| `GET` | `/api/admin/bookings` | Retrieve all reservations across the platform | Yes (Admin) |
+| `PATCH`| `/api/admin/bookings/:id/status`| Approve or Reject reservation status | Yes (Admin) |
+| `GET` | `/api/admin/users` | List all registered user accounts | Yes (Admin) |
+
+### Support & Reviews Routes (`/api/queries`, `/api/reviews`)
+| Method | Endpoint | Description | Auth Required |
+| :--- | :--- | :--- | :---: |
+| `POST` | `/api/queries` | Submit customer support inquiry | Yes |
+| `GET` | `/api/queries/all` | Fetch all support tickets (Admin review) | Yes (Admin) |
+| `GET` | `/api/reviews` | Retrieve approved destination traveler reviews | No |
+| `POST` | `/api/reviews` | Submit new star rating and feedback | Yes |
+
+---
+
+## 📁 Repository Directory Tree
 
 ```
 ├── Frontend/                 # React 19 + Vite 6 Client Application
 │   ├── src/
 │   │   ├── assets/           # Team photos, logos, static illustrations
-│   │   ├── components/       # UI Components (Navbar, Hero, Chatbot, 3D Canvas, Footer)
-│   │   ├── config/           # Centralized API routing config (api.js)
-│   │   ├── data/             # Curated destination, stay, and activity catalogs
+│   │   ├── components/       # Reusable UI (Navbar, Hero, Chatbot, 3D Canvas, Footer)
 │   │   ├── pages/            # Page Views (BookingPage, AdminDashboard, Reviews, Auth)
-│   │   └── App.jsx           # Main routing & React Context Provider
+│   │   ├── config/           # Centralized API routing configuration (api.js)
+│   │   ├── data/             # Curated destination, stay, and activity catalogs
+│   │   └── App.jsx           # Main client routing & React Context Provider
 │   ├── package.json
 │   └── vite.config.js        # Vite build configuration with development proxy
 │
@@ -117,7 +214,7 @@ The production database is seeded with authentic Indian travel records via `back
 
 ### 1. Prerequisites
 - [Node.js](https://nodejs.org/) (v18 or higher recommended)
-- [MongoDB](https://www.mongodb.com/) (Local MongoDB or free [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) cluster)
+- [MongoDB](https://www.mongodb.com/) (Local instance or free [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) cluster)
 - Git
 
 ### 2. Clone the Repository
@@ -133,14 +230,14 @@ cd Swadeshi-for-Atmanirbhar-Bharat---Travel-Tourism
    npm install
    ```
 
-2. Configure environment variables in `backend/.env`:
+2. Create a `.env` file in the `backend/` directory:
    ```env
    PORT=3000
    NODE_ENV=development
-   MONGODB_URI=your_mongodb_connection_string
+   MONGODB_URI=mongodb+srv://<user>:<password>@cluster.mongodb.net/tour_planner?retryWrites=true&w=majority
    CORS_ORIGIN=http://localhost:5173
 
-   # Optional: Email Service (Gmail / SMTP)
+   # Email Service (Optional for local testing)
    EMAIL_HOST=smtp.gmail.com
    EMAIL_PORT=587
    EMAIL_USER=your-email@gmail.com
@@ -148,15 +245,15 @@ cd Swadeshi-for-Atmanirbhar-Bharat---Travel-Tourism
    EMAIL_FROM="Swadeshi Travel <your-email@gmail.com>"
    ```
 
-3. Seed the database with real-world dataset (optional):
+3. (Optional) Populate database with realistic mock data:
    ```bash
    node seedLargeDataset.js
    ```
 
-4. Start the Express server:
+4. Start the backend development server:
    ```bash
    npm run dev
-   # Server running on http://localhost:3000
+   # Backend running on http://localhost:3000
    ```
 
 ### 4. Frontend Setup
@@ -169,27 +266,27 @@ cd Swadeshi-for-Atmanirbhar-Bharat---Travel-Tourism
 2. Start the Vite development server:
    ```bash
    npm run dev
-   # Client running on http://localhost:5173
+   # Frontend running on http://localhost:5173
    ```
 
-3. Open `http://localhost:5173` in your browser. The Vite proxy forwards all `/api/*` calls directly to `http://localhost:3000`.
+3. Open `http://localhost:5173` in your browser. The Vite proxy forwards `/api` calls directly to `http://localhost:3000`.
 
 ---
 
 ## 🔑 Demonstration Credentials
 
-For testing and grading purposes, you can log in using the pre-configured administrative account:
+For testing and grading purposes, you can log in using the pre-configured accounts:
 
-| Role | Email | Password | Access Level |
+| Role | Email | Password | Access Capabilities |
 | :--- | :--- | :--- | :--- |
-| **Admin** | `admin@example.com` | `admin123` | Full Dashboard & User Management (`/admin`) |
-| **Traveler (User)** | `rajesh.kumar@example.com` | `password123` | Booking & Profile Access (`/profile`) |
+| **Platform Administrator** | `admin@example.com` | `admin123` | Full Admin Dashboard, Revenue Analytics, Booking Approvals (`/admin`) |
+| **Registered Traveler** | `rajesh.kumar@example.com` | `password123` | Booking Pipeline, Profile Management, Personal Bookings (`/profile`) |
 
 ---
 
 ## 👥 Meet Our Team
 
-| Name | Role | Degree & Institution | Profile Links |
+| Name | Role | Academic Background | Professional Links |
 | :--- | :--- | :--- | :--- |
 | **Satyam Kumar** | **Lead & Backend Developer** | B.Tech CSE (4th Year), Lovely Professional University | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/satyam-kumar-51a413299/) [![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white)](https://github.com/satyamsharma804) |
 
@@ -197,4 +294,4 @@ For testing and grading purposes, you can log in using the pre-configured admini
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE) — free to use and adapt for academic and community purposes.
+This project is licensed under the [MIT License](LICENSE) — free to use and adapt for academic, personal, and community development.
