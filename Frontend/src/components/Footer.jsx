@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FaLinkedin, FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa";
 
 export default function Footer() {
@@ -140,30 +141,30 @@ export default function Footer() {
               <span className="absolute -bottom-2 left-0 w-12 h-1 bg-gradient-to-r from-blue-500 to-transparent rounded-full"></span>
             </h3>
             <div className="grid grid-cols-2 gap-4">
-              <a href="/destination/bali" className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center group">
-                <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mr-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span> Bali
-              </a>
-              <a href="/destination/santorini" className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center group">
-                <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mr-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span> Santorini
-              </a>
-              <a href="/destination/kyoto" className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center group">
-                <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mr-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span> Kyoto
-              </a>
-              <a href="/destination/thailand" className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center group">
-                <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mr-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span> Thailand
-              </a>
-              <a href="/destination/iceland" className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center group">
-                <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mr-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span> Iceland
-              </a>
-              <a href="/destination/paris" className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center group">
-                <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mr-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span> Paris
-              </a>
-              <a href="/destination/new-york" className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center group">
-                <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mr-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span> New York
-              </a>
-              <a href="/destination/machu-picchu" className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center group">
-                <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mr-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span> Machu Picchu
-              </a>
+              <Link to="/recommend" className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center group">
+                <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mr-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span> Goa
+              </Link>
+              <Link to="/recommend" className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center group">
+                <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mr-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span> Manali
+              </Link>
+              <Link to="/recommend" className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center group">
+                <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mr-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span> Kerala
+              </Link>
+              <Link to="/recommend" className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center group">
+                <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mr-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span> Jaipur
+              </Link>
+              <Link to="/recommend" className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center group">
+                <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mr-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span> Varanasi
+              </Link>
+              <Link to="/recommend" className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center group">
+                <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mr-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span> Leh Ladakh
+              </Link>
+              <Link to="/recommend" className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center group">
+                <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mr-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span> Rishikesh
+              </Link>
+              <Link to="/recommend" className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-300 flex items-center group">
+                <span className="w-1.5 h-1.5 bg-amber-500 rounded-full mr-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span> Andaman
+              </Link>
             </div>
           </div>
 

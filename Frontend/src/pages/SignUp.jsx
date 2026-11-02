@@ -26,14 +26,14 @@ const Signup = () => {
   // Animation states
   const [isPageLoaded, setIsPageLoaded] = useState(false);
   
-  // Predefined list of locations
+  // Predefined list of Indian locations
   const predefinedLocations = [
-    "New York, USA", "London, UK", "Tokyo, Japan", "Paris, France",
-    "Mumbai, India", "Sydney, Australia", "Dubai, UAE", "Toronto, Canada",
-    "Singapore", "Berlin, Germany", "Barcelona, Spain", "Hong Kong",
-    "Amsterdam, Netherlands", "Istanbul, Turkey", "Bangkok, Thailand",
-    "Rome, Italy", "Cairo, Egypt", "Johannesburg, South Africa", "Rio de Janeiro, Brazil",
-    "Mexico City, Mexico", "Seoul, South Korea", "Beijing, China"
+    "Mumbai, Maharashtra", "New Delhi, Delhi NCR", "Bengaluru, Karnataka", "Hyderabad, Telangana",
+    "Chennai, Tamil Nadu", "Kolkata, West Bengal", "Pune, Maharashtra", "Ahmedabad, Gujarat",
+    "Jaipur, Rajasthan", "Lucknow, Uttar Pradesh", "Chandigarh, Punjab", "Varanasi, Uttar Pradesh",
+    "Surat, Gujarat", "Kochi, Kerala", "Bhopal, Madhya Pradesh", "Patna, Bihar",
+    "Guwahati, Assam", "Bhubaneswar, Odisha", "Dehradun, Uttarakhand", "Amritsar, Punjab",
+    "Indore, Madhya Pradesh", "Visakhapatnam, Andhra Pradesh", "Agra, Uttar Pradesh", "Shimla, Himachal Pradesh"
   ];
 
   // Set page as loaded for animations

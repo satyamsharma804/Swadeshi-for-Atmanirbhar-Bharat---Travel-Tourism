@@ -1,53 +1,49 @@
 
 export const destinations = [
   {
-    image: "https://images.pexels.com/photos/1423580/pexels-photo-1423580.jpeg?cs=srgb&dl=pexels-jplenio-1423580.jpg&fm=jpg",
-    image1: "https://media.istockphoto.com/id/1051651510/photo/great-wall.jpg?b=1&s=612x612&w=0&k=20&c=LpM8aw9WaF3D55chm5p4hYW22fH-Qh3rX7NI0t5LAsA=",
-    image2: "https://images.pexels.com/photos/31477803/pexels-photo-31477803/free-photo-of-scenic-sunset-over-the-great-wall-of-china.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    image3: "https://images.pexels.com/photos/4445241/pexels-photo-4445241.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    image4: "https://images.pexels.com/photos/9274463/pexels-photo-9274463.jpeg?auto=compress&cs=tinysrgb&w=1200",
-
-    title: "Great Wall of China",
-    subTitle: "One of the Seven Wonders of the World, the Great Wall stretches across northern China.",
-    location: "Beijing, China",
-    description: "This ancient fortification was built to protect Chinese states from invasions and is a UNESCO World Heritage Site.",
-    cost: "499999",
-    duration: "2-3 hours",
-    distance: "7,500 km",
+    image: "https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?w=1200&auto=format&fit=crop&q=80",
+    image1: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=1200&auto=format&fit=crop&q=80",
+    image2: "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=1200&auto=format&fit=crop&q=80",
+    image3: "https://images.unsplash.com/photo-1593181629936-11c609b8db9b?w=1200&auto=format&fit=crop&q=80",
+    image4: "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?w=1200&auto=format&fit=crop&q=80",
+    title: "Leh Ladakh",
+    subTitle: "The Land of High Passes, offering surreal mountain moonscapes, crystal lakes, and cliffside monasteries.",
+    location: "Ladakh, India",
+    description: "Explore the dramatic high-altitude beauty of Ladakh, ride across Khardung La, and witness the turquoise waters of Pangong Tso.",
+    cost: "24999",
+    duration: "6 days",
+    distance: "1,050 km",
     rating: 4.9,
-    reviews: 8000,
+    reviews: 6200,
     tripHighlights: [
-      "Walk along ancient watchtowers overlooking vast landscapes",
-      "Enjoy sweeping panoramic views of mountains and countryside",
-      "Discover centuries of fascinating history and defensive architecture",
-      "Ride a cable car for a unique perspective of the wall",
-      "Take photos at the beautifully preserved Mutianyu section"
+      "Drive across Khardung La, one of the world's highest motorable passes",
+      "Camp beside the color-changing waters of Pangong Tso lake",
+      "Visit ancient cliffside monasteries like Thiksey and Hemis",
+      "Experience the dramatic sand dunes and double-humped camels of Nubra Valley",
+      "Stargaze under unpolluted pristine Himalayan night skies"
     ]
-
-
   },
   {
-    image: "https://images4.alphacoders.com/743/743533.jpg",
-    image1: "https://media.istockphoto.com/id/646327788/photo/sydney.jpg?b=1&s=612x612&w=0&k=20&c=ODc0VYQBoe9xGuU3AUrmmv9L-VZFbU27GwFyW__ejfM=",
-    image2: "https://media.istockphoto.com/id/1282580162/photo/fireworks-for-new-years-eve-sydney.jpg?b=1&s=612x612&w=0&k=20&c=mtPs7jMlaOMgx41t8cIS4FJ0_BUCYkipnTakqka76rw=",
-    image3: "https://media.istockphoto.com/id/1564247869/photo/sydney-at-night-nsw-australia.jpg?b=1&s=612x612&w=0&k=20&c=xGepuVs0A5aOErmT4aLka683d3JRyWPw1TqajpojRCk=",
-    image4: "https://media.istockphoto.com/id/484742827/photo/city-of-sydney-cityscape-with-opera-house-and-sailing-boat.jpg?b=1&s=612x612&w=0&k=20&c=vvyqS8m41fo86UToXMhq3rpngOSEfnZ8m7Z3sgvkCcI=",
-
-    title: "Sydney Opera House",
-    subTitle: "An iconic performance venue in Sydney, Australia, with stunning architectural design.",
-    location: "Sydney, Australia",
-    description: "The Sydney Opera House is one of the busiest performing arts venues in the world, famous for its unique shell-like design.",
-    cost: "40000",
-    duration: "1-2 hours",
-    distance: "16,000 km",
+    image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1200&auto=format&fit=crop&q=80",
+    image1: "https://images.unsplash.com/photo-1571536802807-30451e3955d8?w=1200&auto=format&fit=crop&q=80",
+    image2: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&auto=format&fit=crop&q=80",
+    image3: "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=1200&auto=format&fit=crop&q=80",
+    image4: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1200&auto=format&fit=crop&q=80",
+    title: "Darjeeling",
+    subTitle: "The Queen of the Hills, renowned for sprawling emerald tea gardens and panoramic views of Mount Kanchenjunga.",
+    location: "West Bengal, India",
+    description: "Immerse yourself in colonial charm, ride the historic UNESCO Himalayan Toy Train, and sip world-famous orthodox Darjeeling tea.",
+    cost: "16999",
+    duration: "4 days",
+    distance: "620 km",
     rating: 4.8,
-    reviews: 6800,
+    reviews: 4900,
     tripHighlights: [
-      "Marvel at the distinctive sail-like architecture by the harbor",
-      "Attend a world-class performance inside a cultural icon",
-      "Capture stunning waterfront views and city skyline",
-      "Learn about its construction and history on a guided tour",
-      "Relax at nearby cafes with views of the Opera House"
+      "Witness the golden sunrise over Mount Kanchenjunga from Tiger Hill",
+      "Ride the historic UNESCO World Heritage Himalayan Toy Train",
+      "Tour lush rolling tea estates and taste fresh orthodox first-flush brews",
+      "Visit the Peace Pagoda and Himalayan Mountaineering Institute",
+      "Stroll through Mall Road and sample authentic momos and thukpa"
     ]
   },
   {
@@ -352,124 +348,73 @@ export const destinations = [
       "Shop for seashell crafts and taste coastal delicacies"
     ]
   },
-  // New destinations with costs between 50,000 and 80,000
   {
-    image: "https://plus.unsplash.com/premium_photo-1661919210043-fd847a58522d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGFyaXN8ZW58MHx8MHx8fDA%3D",
-    image1: "https://media.istockphoto.com/id/2022770565/photo/view-of-the-louvre-museum-the-worlds-largest-art-museum-and-a-historic-monument-in-paris.jpg?s=612x612&w=0&k=20&c=clWyGKPjtMqKvkCOsWvlIdVhgf7biXUs0piHueNf53E=",
-    image2: "https://plus.unsplash.com/premium_photo-1666283181610-b95ee7e55465?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cGFyaXN8ZW58MHx8MHx8fDA%3D",
-    image3: "https://images.unsplash.com/photo-1471623432079-b009d30b6729?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBhcmlzfGVufDB8fDB8fHww",
-    image4: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGFyaXN8ZW58MHx8MHx8fDA%3D",
-    title: "Paris",
-    subTitle: "The City of Light, famous for its art, culture, and the Eiffel Tower.",
-    location: "Île-de-France, France",
-    description: "Paris offers a blend of history, romance, and modernity with iconic landmarks like the Louvre and Notre-Dame.",
-    cost: "75000",
-    duration: "5 days",
-    distance: "6500 km",
+    image: "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?w=1200&auto=format&fit=crop&q=80",
+    image1: "https://images.unsplash.com/photo-1600100397608-f010f443b7d4?w=1200&auto=format&fit=crop&q=80",
+    image2: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1200&auto=format&fit=crop&q=80",
+    image3: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&auto=format&fit=crop&q=80",
+    image4: "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?w=1200&auto=format&fit=crop&q=80",
+    title: "Rishikesh",
+    subTitle: "The Yoga Capital of the World, nestled on the sacred banks of the Ganges beneath the Shivalik Himalayas.",
+    location: "Uttarakhand, India",
+    description: "Experience spiritual bliss with the divine evening Ganga Aarti, exhilarating whitewater rapids, and serene Himalayan yoga ashrams.",
+    cost: "9999",
+    duration: "3 days",
+    distance: "240 km",
     rating: 4.9,
-    reviews: 9200,
+    reviews: 7300,
     tripHighlights: [
-      "Climb the Eiffel Tower for stunning views",
-      "Explore world-class art at the Louvre Museum",
-      "Cruise along the Seine River at sunset",
-      "Indulge in French pastries and gourmet meals",
-      "Stroll through Montmartre and visit Sacré-Cœur"
+      "Experience thrilling Grade-IV whitewater river rafting through the Ganges",
+      "Attend the soul-stirring evening Ganga Aarti at Triveni Ghat",
+      "Cross the iconic suspension bridges: Ram Jhula and Lakshman Jhula",
+      "Practice meditation and yoga in historic spiritual ashrams",
+      "Try high-flying cliff jumping and bungee jumping over Himalayan gorges"
     ]
   },
   {
-    image: "https://images.unsplash.com/photo-1602940659805-770d1b3b9911?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmV3JTIweW9yayUyMGNpdHl8ZW58MHx8MHx8fDA%3D",
-    image1: "https://media.istockphoto.com/id/528725265/photo/central-park-aerial-view-manhattan-new-york.jpg?s=612x612&w=0&k=20&c=GYjpCp4MziKDE_fmYygwt6Cw7CztuiJavMz26E5kaVc=",
-    image2: "https://media.istockphoto.com/id/529119424/photo/manhattan-bridge-in-new-york.jpg?s=612x612&w=0&k=20&c=9bw6XdNUY7u6VYo0r3Av-37dxADsYOoZrl5JlxKrpeI=",
-    image3: "https://media.istockphoto.com/id/1454217037/photo/statue-of-liberty-and-new-york-city-skyline-with-manhattan-financial-district-world-trade.jpg?s=612x612&w=0&k=20&c=6V54_qVlDfo59GLEdY2W8DOjLbbHTJ9y4AnJ58a3cis=",
-    image4: "https://media.istockphoto.com/id/496266816/photo/brooklyn-bridge-and-lower-manhattan-at-sunrise-new-york-city.jpg?s=612x612&w=0&k=20&c=yBpfE2EC3CbUD8tZOO0j_e9nSfmu0sqOr4-IeEsRmyw=",
-  
-
-    title: "New York City",
-    subTitle: "The Big Apple, a global hub of culture, finance, and entertainment.",
-    location: "New York, USA",
-    description: "Explore Times Square, the Statue of Liberty, and Central Park in this bustling metropolis.",
-    cost: "80000",
-    duration: "6 days",
-    distance: "12000 km",
-    rating: 4.8,
-    reviews: 10500,
-    tripHighlights: [
-      "Visit Times Square and catch a Broadway show",
-      "See the Statue of Liberty and Ellis Island",
-      "Enjoy panoramic views from the Empire State Building",
-      "Walk through Central Park and explore museums",
-      "Shop and dine in SoHo and Fifth Avenue"
-    ]
-  },
-  {
-    image: "https://images.unsplash.com/photo-1696519669474-3001c0e2b548?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    image1: "https://media.istockphoto.com/id/2075119570/photo/white-architecture-in-santorini-island-greece-windmill-in-oia-town-at-sunny-day.jpg?s=612x612&w=0&k=20&c=GbW4NezZ3Suo41VKn2H4RIzPXDf3jmX_8kDPoxcgDkg=",
-    image2: "https://media.istockphoto.com/id/827205472/photo/young-couple-walking-in-oia-santorini.jpg?s=612x612&w=0&k=20&c=c169mUUJN-70HREnP7hdm_8urJ3Kr8Qt3LQrxtNQPnE=",
-    image3: "https://media.istockphoto.com/id/929135598/photo/santorini-greece-picturesq-view-of-traditional-cycladic-santorini-houses-on-small-street-with.jpg?s=612x612&w=0&k=20&c=Z8R8IPtjYfk8gc5Q-1Q4jD1coUgqu5vuTezM2ONRUPA=",
-    image4: "https://media.istockphoto.com/id/506042108/photo/scenic-view-of-traditional-cycladic-houses-with-flowers-in-foreg.jpg?s=612x612&w=0&k=20&c=hHXJ_dmNOYeeL107VXct5lA9q8qtLj0R7zOcj-9D-_A=",
-    title: "Santorini",
-    subTitle: "A Greek island known for its white-washed buildings and stunning sunsets.",
-    location: "Cyclades, Greece",
-    description: "Santorini offers breathtaking views, volcanic beaches, and a rich history tied to ancient civilizations.",
-    cost: "65000",
+    image: "https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?w=1200&auto=format&fit=crop&q=80",
+    image1: "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1200&auto=format&fit=crop&q=80",
+    image2: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=1200&auto=format&fit=crop&q=80",
+    image3: "https://images.unsplash.com/photo-1566552881560-0be862a7c445?w=1200&auto=format&fit=crop&q=80",
+    image4: "https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?w=1200&auto=format&fit=crop&q=80",
+    title: "Udaipur",
+    subTitle: "The City of Lakes and Venice of the East, famed for royal marble palaces and romantic sunset boat cruises.",
+    location: "Rajasthan, India",
+    description: "Step into royal Mewar history with grand lakeside palaces, intricately carved temples, and serene boat cruises on Lake Pichola.",
+    cost: "18999",
     duration: "4 days",
-    distance: "4500 km",
+    distance: "660 km",
     rating: 4.9,
-    reviews: 7800,
+    reviews: 6100,
     tripHighlights: [
-      "Watch sunsets over the caldera in Oia",
-      "Swim at unique red and black sand beaches",
-      "Explore ancient ruins of Akrotiri",
-      "Savor local wines at a vineyard tour",
-      "Wander through charming Cycladic alleys"
+      "Take a sunset boat cruise on Lake Pichola admiring Jag Mandir and Lake Palace",
+      "Explore the grand halls, courtyards, and museum of the City Palace",
+      "Watch folk dance and puppetry performances at Bagore Ki Haveli",
+      "Shop for authentic Bandhani textiles, mojris, and silver jewellery",
+      "Enjoy rooftop dining with illuminated views of the historic lake"
     ]
   },
-  // {
-  //   image: "https://images.unsplash.com/photo-1557409518-691ebcd96038?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8VG9reW98ZW58MHx8MHx8fDA%3D",
-  //   image1: "https://media.istockphoto.com/id/956015912/photo/high-building-at-tokyo-shinjuku-and-mt-fuji.jpg?s=612x612&w=0&k=20&c=dPukOzZAJfEEP3bccoIn3WewORes-wi_GkyLLGrg13M=",
-  //   image2: "https://media.istockphoto.com/id/1479771597/photo/tokyo-japan-skyline-with-the-tokyo-tower.jpg?s=612x612&w=0&k=20&c=S59ZVh-CZrh6fm7D9P-9Odcs0jwpy0U1r-ZcAdNHRzM=",
-  //   image3: "https://media.istockphoto.com/id/1329537420/photo/tokyo-japan-tokyo-japan-city-skyline-at-asakusa-temple.jpg?s=612x612&w=0&k=20&c=DB-sj6japx0l5UtxhShUS6mVhymDvodra8hnzo13h7o=",
-  //   image4: "https://media.istockphoto.com/id/955203704/photo/tokyo-japan-skyline.jpg?s=612x612&w=0&k=20&c=p9jGgNU4P4wesBZ_EnTfFW4y-iYumkcFWj02cbpqJpA=",
-
-  //   title: "Tokyo",
-  //   subTitle: "A vibrant city blending tradition and futuristic innovation.",
-  //   location: "Tokyo, Japan",
-  //   description: "Experience Tokyo's bustling streets, ancient temples, and cutting-edge technology.",
-  //   cost: "70000",
-  //   duration: "5 days",
-  //   distance: "9500 km",
-  //   rating: 4.8,
-  //   reviews: 8900,
-  //   tripHighlights: [
-  //     "Visit ancient Senso-ji Temple in Asakusa",
-  //     "Experience the Shibuya Crossing and Harajuku fashion",
-  //     "Taste sushi at Tsukiji or Toyosu Market",
-  //     "Marvel at views from Tokyo Skytree or Tokyo Tower",
-  //     "Explore tranquil gardens and historic shrines"
-  //   ]
-  // },
-  // {
-  //   image: "https://plus.unsplash.com/premium_photo-1697730061063-ad499e343f26?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  //   image1: "https://media.istockphoto.com/id/2066510109/photo/victoria-and-alfred-v-and-a-waterfront-lit-up-during-a-colorful-sunset-with-table-mountain-in.jpg?s=612x612&w=0&k=20&c=Ejh_9bEhIXEaqjNGrpWiKZeJ98ysSFFF5GXP4DhJbn4=",
-  //   image2: "https://media.istockphoto.com/id/477451698/photo/twelve-apostles-mountain-in-camps-bay-cape-town-south-africa.jpg?s=612x612&w=0&k=20&c=zLoLAdnbgrVQaRZpSpNtiyEJQRb4ksbP-2albNvhy5A=",
-  //   image3: "https://media.istockphoto.com/id/184421942/photo/table-mountain-and-cape-town-harbour-south-africa.jpg?s=612x612&w=0&k=20&c=5uhVQIyJBxJnEw3Xo94uLpuMWHKKnRmvpOMDQBsfsSw=",
-  //   image4: "https://media.istockphoto.com/id/1202000618/photo/camps-bay-cape-town-vibrant-sunset-twilight-south-africa.jpg?s=612x612&w=0&k=20&c=xJkV2J3chC4t02qKImtyCcqsPtri_M4uzK9uIp4Eqkg=",
-
-  //   title: "Cape Town",
-  //   subTitle: "A coastal gem with stunning landscapes and rich history.",
-  //   location: "Western Cape, South Africa",
-  //   description: "Cape Town is famous for Table Mountain, Cape Point, and its vibrant multicultural vibe.",
-  //   cost: "60000",
-  //   duration: "5 days",
-  //   distance: "8000 km",
-  //   rating: 4.7,
-  //   reviews: 6700,
-  //   tripHighlights: [
-  // //     "Ride the cableway up Table Mountain",
-  //     "Visit Robben Island and learn Mandela’s story",
-  //     "Explore vibrant Bo-Kaap streets",
-  //     "Relax at Camps Bay or Clifton beaches",
-  //     "Drive along scenic Chapman’s Peak Drive"
-  //   ]
-  // }
+  {
+    image: "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=1200&auto=format&fit=crop&q=80",
+    image1: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&auto=format&fit=crop&q=80",
+    image2: "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=1200&auto=format&fit=crop&q=80",
+    image3: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1200&auto=format&fit=crop&q=80",
+    image4: "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=1200&auto=format&fit=crop&q=80",
+    title: "Andaman & Nicobar Islands",
+    subTitle: "Tropical paradise with turquoise waters, pristine coral reefs, and tranquil white-sand beaches.",
+    location: "Andaman & Nicobar Islands, India",
+    description: "Discover India's premier tropical island sanctuary, featuring world-class scuba diving, historic Cellular Jail, and Radhanagar Beach.",
+    cost: "29999",
+    duration: "5 days",
+    distance: "1,200 km",
+    rating: 4.9,
+    reviews: 5800,
+    tripHighlights: [
+      "Relax on the powdery sands of Radhanagar Beach, rated among Asia's best",
+      "Scuba dive amidst vibrant coral reefs and marine life at Elephant Beach",
+      "Visit the historic Cellular Jail in Port Blair and watch the Light & Sound show",
+      "Cruise between islands on high-speed catamarans across the Bay of Bengal",
+      "Explore natural limestone caves and dense mangrove creeks at Baratang"
+    ]
+  }
 ];
