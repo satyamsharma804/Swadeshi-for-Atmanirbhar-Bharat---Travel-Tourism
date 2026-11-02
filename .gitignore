@@ -42,3 +42,8 @@ netlify-debug.log
 
 # Local development
 *.local
+
+# Academic Project Reports & Assets
+PROJECT_REPORT.*
+buildReportHtml.js
+report_images/
