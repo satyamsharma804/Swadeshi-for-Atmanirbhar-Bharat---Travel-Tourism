@@ -2,8 +2,8 @@ import { VscChromeClose } from "react-icons/vsc";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaMapMarkerAlt, FaUsers, FaHotel, FaLightbulb, FaCompass } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { useState, useEffect, useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useState, useEffect, useContext, useRef } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import Logo from "../assets/logo.png";
 import { UserContext } from "../App";
 import MeetOurTeam from "./MeetOurTeam";
@@ -14,9 +14,38 @@ export default function Navbar() {
   const [navbarState, setNavbarState] = useState(false);
   const [profileDropdownOpen, setProfileDropdownOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
+  const profileRef = useRef(null);
   const [profileImage, setProfileImage] = useState("");
   const [userInitials, setUserInitials] = useState("");
   const navigate = useNavigate();
+  const location = useLocation();
+
+  // Close all dropdowns whenever route changes
+  useEffect(() => {
+    setDropdownOpen(false);
+    setProfileDropdownOpen(false);
+    setNavbarState(false);
+  }, [location.pathname]);
+
+  // Close dropdowns when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setDropdownOpen(false);
+      }
+      if (profileRef.current && !profileRef.current.contains(event.target)) {
+        setProfileDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("touchstart", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("touchstart", handleClickOutside);
+    };
+  }, []);
 
   useEffect(() => {
     const token = localStorage.getItem("token");
@@ -100,7 +129,7 @@ export default function Navbar() {
               </Link>
             </li>
           ))}
-          <li className="relative">
+          <li className="relative" ref={dropdownRef}>
             <button
               onClick={() => setDropdownOpen(!dropdownOpen)}
               className="text-lg flex items-center hover:text-teal-400 transition duration-300"
@@ -148,11 +177,14 @@ export default function Navbar() {
                       className="relative"
                     >
                       <button
-                        onClick={() =>
-                          typeof exploreRoutes[item] === "function"
-                            ? exploreRoutes[item]()
-                            : navigate(exploreRoutes[item])
-                        }
+                        onClick={() => {
+                          setDropdownOpen(false);
+                          if (typeof exploreRoutes[item] === "function") {
+                            exploreRoutes[item]();
+                          } else {
+                            navigate(exploreRoutes[item]);
+                          }
+                        }}
                         className="relative z-10 w-full flex items-center space-x-2 px-3 py-2 hover:bg-white/10 transition-all duration-300 group"
                       >
                         <span className="w-7 h-7 flex items-center justify-center rounded-full bg-gradient-to-br from-purple-500/20 to-teal-500/20 
@@ -172,7 +204,13 @@ export default function Navbar() {
                     </motion.li>
                   ))}
                   
-                  <div className="px-3 py-1.5 border-t border-white/20 bg-white/5">
+                  <div 
+                    onClick={() => {
+                      setDropdownOpen(false);
+                      isAuthenticated() && navigate("/recommend");
+                    }}
+                    className="px-3 py-1.5 border-t border-white/20 bg-white/5 cursor-pointer hover:bg-white/10 transition-colors"
+                  >
                     <div className="text-xs text-white/60 flex items-center gap-1">
                       <FaCompass className="text-teal-400 animate-pulse text-xs" />
                       <span className="truncate">Explore destinations</span>
@@ -193,7 +231,7 @@ export default function Navbar() {
           </Link>
 
           {isLoggedIn ? (
-            <div className="relative">
+            <div className="relative" ref={profileRef}>
               {profileImage && profileImage.trim() !== "" ? (
                 <img
                   src={profileImage}
