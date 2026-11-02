@@ -247,6 +247,129 @@ const destinationGuides = {
       }
     ]
   }
+,
+  bihar: {
+    name: "Bihar (Bodh Gaya, Rajgir & Nalanda)",
+    tagline: "Cradle of Buddhism, Ancient Universities & Royal Magadha Heritage",
+    bestTime: "October to March",
+    transportOptions: {
+      flight: "Fly into Gaya International Airport (GAY) or Patna Airport (PAT). Taxis and express trains available for circuit travel.",
+      train: "Gaya Junction is well-connected via Rajdhani and express trains to all major metros across India.",
+      road: "Smooth 4-lane highways connecting Patna, Nalanda, Rajgir, and Bodh Gaya with tourist luxury buses and cabs."
+    },
+    budgetProfiles: {
+      budget: { perDayPerPerson: 1400, stay: "Monastery Guesthouses / Budget Hotels in Bodh Gaya & Rajgir", food: "Traditional Bihari thali, Litti Chokha, Sattu parathas" },
+      moderate: { perDayPerPerson: 3200, stay: "3-Star Heritage & Buddhist Wellness Resorts", food: "Multi-cuisine vegetarian & Pan-Asian pilgrim dining" },
+      luxury: { perDayPerPerson: 7500, stay: "Premium Luxury Suites (The Royal Residency / Oaks)", food: "Fine dining organic feasts, private meditation dining" }
+    },
+    dayPlans: [
+      {
+        day: 1,
+        title: "Bodh Gaya & The Sacred Bodhi Tree",
+        morning: "Visit the UNESCO World Heritage Mahabodhi Temple and meditate beneath the sacred Bodhi Tree where Lord Buddha attained enlightenment.",
+        afternoon: "Marvel at the 80-foot Great Buddha statue and tour international monasteries (Thai, Bhutanese, Tibetan, and Japanese Zen gardens).",
+        evening: "Attend evening butter lamp prayer chanting inside the Mahabodhi Temple complex."
+      },
+      {
+        day: 2,
+        title: "Ancient Nalanda University Ruins",
+        morning: "Drive to the archaeological ruins of ancient 5th-century Nalanda University, the world's foremost residential center of learning.",
+        afternoon: "Tour the Nalanda Archaeological Museum showcasing ancient bronze statues and Buddhist sealings. Enjoy hot local Litti Chokha.",
+        evening: "Visit Xuanzang Memorial Hall dedicated to the famous 7th-century Chinese scholar traveler."
+      },
+      {
+        day: 3,
+        title: "Rajgir Hills, Ropeway & Peace Pagoda",
+        morning: "Ride the scenic aerial chairlift ropeway to the top of Ratnagiri Hill to visit the gleaming white Vishwa Shanti Stupa.",
+        afternoon: "Visit Griddhakuta (Vulture's Peak), King Bimbisara's Jail, and Venu Vana bamboo grove where the Buddha stayed.",
+        evening: "Relax your muscles in the mineral-rich natural hot sulfur springs of Brahma Kund."
+      }
+    ]
+  },
+  jharkhand: {
+    name: "Jharkhand (Ranchi Waterfalls, Patratu & Netarhat)",
+    tagline: "The Land of Forests, Cascading Waterfalls & Winding Valleys",
+    bestTime: "October to April",
+    transportOptions: {
+      flight: "Birsa Munda Airport Ranchi (IXR) operates direct daily flights from Delhi, Mumbai, Kolkata, Bengaluru, and Hyderabad.",
+      train: "Ranchi Junction and Hatia are major railway hubs with Vande Bharat and Rajdhani express trains.",
+      road: "Scenic mountain highways connecting Ranchi, Patratu Valley, and Netarhat plateau."
+    },
+    budgetProfiles: {
+      budget: { perDayPerPerson: 1500, stay: "Eco-tourism Guesthouses & Forest Rest Houses", food: "Authentic Chotanagpur thali, Dhuska with Ghugni, Chilka Roti" },
+      moderate: { perDayPerPerson: 3400, stay: "Patratu Lake Resort / Ranchi Modern 3-Star Hotels", food: "Riverside cafes, tribal fusion dining, barbecue" },
+      luxury: { perDayPerPerson: 7000, stay: "Luxury Nature Cottages & Executive Suites (Radisson Blu / BNR Chanakya)", food: "Multi-cuisine dining, private bonfire feasts" }
+    },
+    dayPlans: [
+      {
+        day: 1,
+        title: "Ranchi City of Waterfalls",
+        morning: "Arrive in Ranchi and drive to Hundru Falls, where the Subarnarekha River plunges 320 feet into a rocky pool.",
+        afternoon: "Visit the cascading Dassam Falls and Jonha Falls surrounded by dense sal and teak forests.",
+        evening: "Climb Tagore Hill for a panoramic city sunset and visit the Rock Garden beside Kanke Dam."
+      },
+      {
+        day: 2,
+        title: "Patratu Valley Serpentine Pass & Dam Boating",
+        morning: "Drive down the dramatic snake-loop hairpin curves of Patratu Valley with panoramic photography stops.",
+        afternoon: "Enjoy speedboat rides and island boating on the vast waters of Patratu Dam, followed by lakeside lunch.",
+        evening: "Stroll along the landscaped Patratu promenade and enjoy evening illuminated musical fountain."
+      },
+      {
+        day: 3,
+        title: "Netarhat — Queen of Chotanagpur",
+        morning: "Drive up the cool forested plateau to Netarhat. Walk through pine and eucalyptus groves to Lower Ghaghri Falls.",
+        afternoon: "Explore the historic 16th-century stone ruins of Palamau Fort nestled deep inside sal woods.",
+        evening: "Gather at Magnolia Sunset Point to witness the breathtaking crimson sunset over the Chotanagpur hill ranges."
+      }
+    ]
+  },
+  northeast: {
+    name: "North East India (Meghalaya, Assam & Sikkim)",
+    tagline: "Abode of Clouds, Living Root Bridges & High Himalayan Peaks",
+    bestTime: "September to May",
+    transportOptions: {
+      flight: "Fly into Lokpriya Gopinath Bordoloi Airport Guwahati (GAU) or Bagdogra Airport (IXB).",
+      train: "Guwahati Junction is the gateway to North East; New Jalpaiguri (NJP) connects to Sikkim.",
+      road: "Scenic Himalayan winding mountain highways with shared sumos and private cabs."
+    },
+    budgetProfiles: {
+      budget: { perDayPerPerson: 1900, stay: "Khasi Village Homestays / Backpacker Hostels in Shillong & Gangtok", food: "Local momos, Thukpa, Jadoh, bamboo shoot delicacies" },
+      moderate: { perDayPerPerson: 4200, stay: "Boutique Pine Wood Resorts & Lake View Lodges", food: "Traditional Assamese / Khasi thali, cafe culture" },
+      luxury: { perDayPerPerson: 9500, stay: "5-Star Eco-Luxury (Ri Kynjai Shillong / Diphlu River Safari Lodge)", food: "Organic farm-to-table gourmet dining, private river dinners" }
+    },
+    dayPlans: [
+      {
+        day: 1,
+        title: "Shillong & Umiam Lake",
+        morning: "Drive from Guwahati to Shillong, stopping for water sports and pine forest photography at magnificent Umiam Lake.",
+        afternoon: "Explore Ward's Lake, Don Bosco Museum of Indigenous Cultures, and vibrant Police Bazar.",
+        evening: "Experience Shillong's celebrated live rock music scene and taste fresh steamed momos at Dylan's Cafe."
+      },
+      {
+        day: 2,
+        title: "Cherrapunji & Living Root Bridges",
+        morning: "Early morning hike down the subtropical valley to cross the ancient Double Decker Living Root Bridge in Nongriat.",
+        afternoon: "Marvel at the roaring Nohkalikai Falls, India's tallest plunge waterfall, and explore Mawsmai limestone cave.",
+        evening: "Watch clouds drift beneath your feet at Eco Park overlooking the rolling plains of Bangladesh."
+      },
+      {
+        day: 3,
+        title: "Dawki Crystal Waters & Mawlynnong",
+        morning: "Drive to Dawki and boat across the glass-clear turquoise waters of the Umngot River where boats look suspended in air.",
+        afternoon: "Visit Mawlynnong, celebrated as Asia's Cleanest Village, with bamboo dustbins and balanced flower gardens.",
+        evening: "Return to Shillong for sunset views and traditional Khasi herbal dinner."
+      },
+      {
+        day: 4,
+        title: "Kaziranga Safari or Gangtok Monasteries",
+        morning: "Take an open-top 4x4 Gypsy safari into Kaziranga National Park to encounter wild One-Horned Rhinoceroses and elephants.",
+        afternoon: "Or journey to Gangtok, Sikkim to visit the holy high-altitude glacial Tsomgo Lake at 12,310 feet.",
+        evening: "Stroll along the pedestrianized MG Marg in Gangtok, picking up organic Sikkim tea and Tibetan handicrafts."
+      }
+    ]
+  }
+
 };
 
 // Generic fallback for any other destination requested
@@ -310,11 +433,30 @@ router.post('/itinerary', (req, res) => {
     const destKey = destination.toLowerCase().trim();
     let guide = null;
 
-    // Check if matched in our curated database
-    for (const key of Object.keys(destinationGuides)) {
-      if (destKey.includes(key) || key.includes(destKey)) {
+    const aliases = {
+      bihar: ['bihar', 'bodh gaya', 'bodhgaya', 'rajgir', 'nalanda', 'patna', 'gaya'],
+      jharkhand: ['jharkhand', 'ranchi', 'patratu', 'netarhat', 'betla', 'hundru', 'dassam'],
+      northeast: ['northeast', 'north east', 'shillong', 'cherrapunji', 'meghalaya', 'assam', 'kaziranga', 'majuli', 'sikkim', 'gangtok', 'tawang', 'arunachal'],
+      goa: ['goa', 'panaji', 'calangute', 'baga', 'anjuna', 'palolem'],
+      manali: ['manali', 'kullu', 'solang', 'rohtang', 'himachal'],
+      kerala: ['kerala', 'alleppey', 'munnar', 'kochi', 'alappuzha', 'wayanad'],
+      jaipur: ['jaipur', 'rajasthan', 'udaipur', 'jodhpur', 'jaisalmer'],
+      varanasi: ['varanasi', 'kashi', 'banaras', 'sarnath']
+    };
+
+    for (const [key, aliasList] of Object.entries(aliases)) {
+      if (aliasList.some(alias => destKey.includes(alias) || alias.includes(destKey))) {
         guide = destinationGuides[key];
         break;
+      }
+    }
+
+    if (!guide) {
+      for (const key of Object.keys(destinationGuides)) {
+        if (destKey.includes(key) || key.includes(destKey)) {
+          guide = destinationGuides[key];
+          break;
+        }
       }
     }
 

@@ -224,5 +224,143 @@ export const accommodations = [
       "Spa and wellness center",
       "Fine dining restaurants"
     ]
+  },
+  {
+    image: "https://images.unsplash.com/photo-1627894483216-2138af692e32?w=1200&auto=format&fit=crop&q=80",
+    image1: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1200&auto=format&fit=crop&q=80",
+    image2: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&auto=format&fit=crop&q=80",
+    image3: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=1200&auto=format&fit=crop&q=80",
+    image4: "https://images.unsplash.com/photo-1627894483216-2138af692e32?w=1200&auto=format&fit=crop&q=80",
+    title: "The Royal Residency Bodh Gaya",
+    subTitle: "Serene spiritual luxury retreat situated minutes from the holy UNESCO Mahabodhi Temple.",
+    location: "Bodh Gaya, Bihar, India",
+    description: "Features tranquil Zen landscaped gardens, a dedicated Buddhist meditation sanctuary, and vegetarian culinary dining.",
+    cost: "4499",
+    duration: "2 nights",
+    distance: "115 km from Patna",
+    rating: 4.8,
+    reviews: 320,
+    hotelhighlights: [
+      "Dedicated Buddhist meditation hall",
+      "Japanese Zen landscape garden",
+      "Proximity to Mahabodhi Temple & Bodhi Tree",
+      "Ayurvedic massage & herbal wellness",
+      "Multi-cuisine Satvik & Pan-Asian dining"
+    ]
+  },
+  {
+    image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1200&auto=format&fit=crop&q=80",
+    image1: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=1200&auto=format&fit=crop&q=80",
+    image2: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1200&auto=format&fit=crop&q=80",
+    image3: "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1200&auto=format&fit=crop&q=80",
+    image4: "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1200&auto=format&fit=crop&q=80",
+    title: "Rajgir Heritage Wellness Resort",
+    subTitle: "A peaceful retreat nestled at the foothills of historic Rajgir hills with natural mineral spring therapies.",
+    location: "Rajgir, Bihar, India",
+    description: "Indulge in holistic herbal therapies, relax in private sulfur spring tubs, and explore Vishwa Shanti Stupa and ancient Magadha ruins.",
+    cost: "5299",
+    duration: "3 nights",
+    distance: "90 km from Patna",
+    rating: 4.7,
+    reviews: 280,
+    hotelhighlights: [
+      "Natural mineral sulfur spring baths",
+      "Panoramic views of Ratnagiri and Vaibhargiri hills",
+      "Guided heritage walk to Nalanda & Vishwa Shanti Stupa",
+      "Open-air yoga and meditation pavilions",
+      "Organic farm-to-table Bihari cuisine (Litti Chokha)"
+    ]
+  },
+  {
+    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&auto=format&fit=crop&q=80",
+    image1: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1200&auto=format&fit=crop&q=80",
+    image2: "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=1200&auto=format&fit=crop&q=80",
+    image3: "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=1200&auto=format&fit=crop&q=80",
+    image4: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&auto=format&fit=crop&q=80",
+    title: "Patratu Lake Resort & Eco-Retreat",
+    subTitle: "Spectacular waterfront resort overlooking the serene azure waters of Patratu Dam and winding hills.",
+    location: "Patratu Valley, Ramgarh / Ranchi, Jharkhand, India",
+    description: "Perched along the scenic snake-loops of Patratu Valley, offering modern lakeside cottages, speedboating, and sunset promenade walks.",
+    cost: "4799",
+    duration: "2 nights",
+    distance: "40 km from Ranchi",
+    rating: 4.8,
+    reviews: 350,
+    hotelhighlights: [
+      "Lakeside cottages with Patratu Dam views",
+      "Water sports marina & speedboat rides",
+      "Private balcony overlooking Patratu winding pass",
+      "Evening bonfire with Chotanagpur folk dance",
+      "Authentic tribal & North Indian delicacies"
+    ]
+  },
+  {
+    image: "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=1200&auto=format&fit=crop&q=80",
+    image1: "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?w=1200&auto=format&fit=crop&q=80",
+    image2: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&auto=format&fit=crop&q=80",
+    image3: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1200&auto=format&fit=crop&q=80",
+    image4: "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=1200&auto=format&fit=crop&q=80",
+    title: "Prabhat Vihar Nature Lodge",
+    subTitle: "Picturesque hill retreat perched atop the highest plateau of Netarhat, the Queen of Chotanagpur.",
+    location: "Netarhat, Jharkhand, India",
+    description: "Immerse in cool mountain breezes, pine-scented woods, and stunning panoramic views of the famous sunrise and sunset over deep forested canyons.",
+    cost: "3899",
+    duration: "2 nights",
+    distance: "155 km from Ranchi",
+    rating: 4.7,
+    reviews: 290,
+    hotelhighlights: [
+      "Steps away from famous Magnolia Sunset Point",
+      "Surrounded by fragrant pine and eucalyptus woods",
+      "Trekking trails to Upper and Lower Ghaghri Falls",
+      "Stargazing under crisp high-plateau skies",
+      "Homestyle Jharkhandi cuisine (Dhuska & Rugra)"
+    ]
+  },
+  {
+    image: "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=1200&auto=format&fit=crop&q=80",
+    image1: "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?w=1200&auto=format&fit=crop&q=80",
+    image2: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&auto=format&fit=crop&q=80",
+    image3: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1200&auto=format&fit=crop&q=80",
+    image4: "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=1200&auto=format&fit=crop&q=80",
+    title: "Diphlu River Safari Lodge",
+    subTitle: "Award-winning eco-luxury safari retreat situated on the peaceful banks of the Diphlu River bordering Kaziranga.",
+    location: "Kaziranga, Assam, India",
+    description: "Handcrafted raised bamboo cottages nestled amidst paddy fields, offering private river verandas, naturalist-guided safaris, and fine Assamese hospitality.",
+    cost: "13499",
+    duration: "3 nights",
+    distance: "220 km from Guwahati",
+    rating: 5.0,
+    reviews: 410,
+    hotelhighlights: [
+      "Stilted bamboo cottages overlooking Diphlu River",
+      "Exclusive private jeep and elephant safaris in Kaziranga",
+      "Expert resident naturalist briefings on wildlife",
+      "Riverside dining on raised machan deck",
+      "Authentic organic Assamese tea and culinary feasts"
+    ]
+  },
+  {
+    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&auto=format&fit=crop&q=80",
+    image1: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1200&auto=format&fit=crop&q=80",
+    image2: "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=1200&auto=format&fit=crop&q=80",
+    image3: "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=1200&auto=format&fit=crop&q=80",
+    image4: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&auto=format&fit=crop&q=80",
+    title: "Ri Kynjai - Serenity by the Lake",
+    subTitle: "Luxury boutique resort inspired by indigenous Khasi thatch architecture overlooking pristine Umiam Lake.",
+    location: "Umiam Lake, Shillong, Meghalaya, India",
+    description: "Perched among pine hills, Ri Kynjai means 'serenity by the lake'. Features upturned boat roof cottages, lakeside balconies, and traditional Khasi herbal spa.",
+    cost: "12999",
+    duration: "3 nights",
+    distance: "85 km from Guwahati",
+    rating: 4.9,
+    reviews: 480,
+    hotelhighlights: [
+      "Cottages modeled after traditional Khasi thatch boats",
+      "Breathtaking lakefront view of Umiam Lake",
+      "Traditional Khasi herbal wellness and body therapies",
+      "Lakeside nature trails and birdwatching",
+      "Gourmet Khasi, North-Eastern and Continental cuisine"
+    ]
   }
 ];
