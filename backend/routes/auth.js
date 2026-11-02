@@ -33,7 +33,6 @@ router.post('/signup', async (req, res) => {
     const newUser = new User({
       name,
       email: email.toLowerCase(),
-      password,
       hashed_password: hashedPassword,
       phone,
       location,
@@ -93,9 +92,7 @@ router.post('/login', async (req, res) => {
       passwordVerified = await bcrypt.compare(password, user.hashed_password);
     }
     
-    if (!passwordVerified && password === user.password) {
-      passwordVerified = true;
-    }
+    // Plain password fallback removed for security
 
     if (!passwordVerified) {
       return res.status(401).json({
@@ -216,8 +213,7 @@ router.post('/verify-otp', async (req, res) => {
     res.json({
       success: true,
       message: 'OTP verified successfully',
-      password: user.password
-    });
+          });
   } catch (error) {
     console.error('Verify OTP error:', error);
     res.status(500).json({
@@ -257,7 +253,6 @@ router.post('/reset-password', async (req, res) => {
     await User.updateOne(
       { email: email.toLowerCase() },
       { 
-        password: newPassword,
         hashed_password: hashedPassword 
       }
     );

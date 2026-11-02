@@ -787,7 +787,6 @@ async function addSampleData() {
         const user = new User({
           ...userData,
           email: userData.email.toLowerCase(),
-          password: userData.password,
           hashed_password: hashedPassword
         });
 

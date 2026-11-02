@@ -27,7 +27,6 @@ async function createAdmin() {
         { email: email.toLowerCase() },
         { 
           is_admin: true,
-          password: password,
           hashed_password: hashedPassword
         }
       );
@@ -38,7 +37,6 @@ async function createAdmin() {
       const adminUser = new User({
         name: name,
         email: email.toLowerCase(),
-        password: password,
         hashed_password: hashedPassword,
         phone: '0000000000',
         location: 'Admin Location',

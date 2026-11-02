@@ -176,7 +176,6 @@ async function seedData() {
         const newUser = new User({
           name: u.name,
           email: u.email.toLowerCase(),
-          password: 'password123',
           hashed_password: commonHashedPassword,
           phone: u.phone,
           location: u.location,
@@ -304,3 +303,4 @@ async function seedData() {
 }
 
 seedData();
+
