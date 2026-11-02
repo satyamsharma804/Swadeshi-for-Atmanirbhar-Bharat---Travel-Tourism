@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/index.cjs", 
+      "use": "@vercel/node",
+      "config": {
+        "runtime": "nodejs24.x" 
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/index.cjs" 
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/Frontend/dist/index.html" 
+    }
+  ]
+}

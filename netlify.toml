@@ -1,0 +1,39 @@
+[build]
+  command = "npm install && cd Frontend && npm install && npm run build"
+  publish = "Frontend/dist"
+  functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+  # Tell Netlify to ignore docs that include ENV examples
+  SECRETS_SCAN_OMIT_PATHS = """
+  backend/MIGRATION_GUIDE.md,
+  backend/MONGODB_SETUP.md,
+  backend/README_NODEJS.md,
+  backend/.env.example,
+  deploy-with-env.sh,
+  deploy-netlify.sh
+  """
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["mongoose", "express", "bcrypt", "nodemailer"]
+  included_files = ["backend/**"]
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Methods = "GET, POST, PUT, DELETE, OPTIONS"
+    Access-Control-Allow-Headers = "Content-Type, Authorization"

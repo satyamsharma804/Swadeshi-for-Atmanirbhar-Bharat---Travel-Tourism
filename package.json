@@ -1,0 +1,33 @@
+{
+  "name": "travel-planner",
+  "version": "1.0.0",
+  "description": "Travel Planner - Full Stack Application (Swadeshi for Atmanirbhar Bharat)",
+  "type": "module",
+  "scripts": {
+    "build": "cd Frontend && npm install && npm run build",
+    "dev:frontend": "cd Frontend && npm run dev",
+    "dev:backend": "cd backend && npm start"
+  },
+  "dependencies": {
+    "serverless-http": "^3.2.0",
+    "axios": "^1.13.2",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.3",
+    "nodemailer": "^6.9.7"
+  },
+  "keywords": [
+    "travel",
+    "planner",
+    "booking",
+    "tourism",
+    "vercel",
+    "ci-cd"
+  ],
+  "author": "Dev",
+  "license": "MIT"
+}
