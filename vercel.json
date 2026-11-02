@@ -5,7 +5,7 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "/api/index.cjs"
+      "destination": "https://swadeshi-for-atmanirbhar-bharat-travel.onrender.com/api/$1"
     },
     {
       "source": "/(.*)",
