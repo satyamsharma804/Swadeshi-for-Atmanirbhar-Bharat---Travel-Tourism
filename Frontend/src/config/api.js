@@ -39,6 +39,9 @@ export const API_ENDPOINTS = {
   GET_TOP_DESTINATIONS: `${API_BASE_URL}/destination/top`,
   GET_TOP_RATED_DESTINATIONS: `${API_BASE_URL}/destination/top-rated`,
   GET_ALL_DESTINATIONS: `${API_BASE_URL}/destination/all`,
+
+  CHATBOT_ITINERARY: `${API_BASE_URL}/chatbot/itinerary`,
+  CHATBOT_MESSAGE: `${API_BASE_URL}/chatbot/message`,
 };
 
 export default API_ENDPOINTS;

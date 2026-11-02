@@ -28,6 +28,7 @@ import AdminDashboard from "./pages/AdminDashboard"; // New import
 import UserQueries from "./pages/UserQueries"; // New import
 import AdminQueryManagement from "./pages/AdminQueryManagement"; // New import
 import Reviews from "./pages/Reviews"; // New import
+import Chatbot from "./components/Chatbot"; // Swadeshi AI Travel Chatbot
 import { createContext, useState } from "react";
 
 export const UserContext = createContext();
@@ -109,6 +110,8 @@ function App() {
         </Routes>
         {/* Only show footer if not on admin page */}
         {!isAdminPage && <Footer />}
+        {/* Floating AI Trip Planner Chatbot */}
+        {!isAdminPage && <Chatbot />}
       </div>
     </UserContext.Provider>
   );

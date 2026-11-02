@@ -16,6 +16,7 @@ const adminRoutes = require('../backend/routes/admin');
 const reviewRoutes = require('../backend/routes/review');
 const queryRoutes = require('../backend/routes/query');
 const destinationRoutes = require('../backend/routes/destination');
+const chatbotRoutes = require('../backend/routes/chatbot');
 
 dotenv.config();
 
@@ -38,7 +39,8 @@ const routes = [
   { path: '/admin', handler: adminRoutes.default },
   { path: '/review', handler: reviewRoutes.default },
   { path: '/query', handler: queryRoutes.default },
-  { path: '/destination', handler: destinationRoutes.default }
+  { path: '/destination', handler: destinationRoutes.default },
+  { path: '/chatbot', handler: chatbotRoutes.default }
 ];
 
 routes.forEach(({ path, handler }) => {

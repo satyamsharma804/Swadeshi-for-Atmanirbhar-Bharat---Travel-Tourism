@@ -12,6 +12,7 @@ import adminRoutes from './routes/admin.js';
 import reviewRoutes from './routes/review.js';
 import queryRoutes from './routes/query.js';
 import destinationRoutes from './routes/destination.js';
+import chatbotRoutes from './routes/chatbot.js';
 
 dotenv.config();
 
@@ -55,6 +56,7 @@ app.use('/api/admin', adminRoutes);
 app.use('/api/review', reviewRoutes);
 app.use('/api/query', queryRoutes);
 app.use('/api/destination', destinationRoutes);
+app.use('/api/chatbot', chatbotRoutes);
 
 // 404 handler
 app.use((req, res) => {
