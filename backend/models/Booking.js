@@ -46,7 +46,6 @@ const bookingSchema = new mongoose.Schema({
 });
 
 // Indexes for faster queries
-bookingSchema.index({ booking_id: 1 });
 bookingSchema.index({ email: 1 });
 bookingSchema.index({ destination: 1 });
 

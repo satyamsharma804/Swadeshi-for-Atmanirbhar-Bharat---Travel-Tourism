@@ -15,7 +15,7 @@ const MeetOurTeam = () => {
       name: "Satyam Kumar",
       role: "Lead Developer",
       photo: satyamImage,
-      bio: "Dev is our brilliant lead developer currently pursuing BTech CSE at LPU. With exceptional skills in PHP, JavaScript and React.js, he manages our development team and ensures we meet all project milestones on our travel planner web application.",
+      bio: "Satyam is our brilliant lead developer currently pursuing BTech CSE at LPU. With exceptional skills in PHP, JavaScript and React.js, he manages our development team and ensures we meet all project milestones on our travel planner web application.",
       social: {
         linkedin: "https://www.linkedin.com/in/satyam-kumar-51a413299/",
         github: "https://github.com/DEV-KUMAR51520",
@@ -39,7 +39,7 @@ const MeetOurTeam = () => {
       name: "Satyam  Kumar",
       role: "Backend Developer",
       photo: satyamImage,
-      bio: "Dev is our backend expert studying BTech CSE at LPU. His strong grasp of PHP, XAMPP, and database management has been instrumental in building robust backend systems and server architecture for our travel planner application in our 2nd year projects.",
+      bio: "Satyam is our backend expert studying BTech CSE at LPU. His strong grasp of PHP, XAMPP, and database management has been instrumental in building robust backend systems and server architecture for our travel planner application in our 2nd year projects.",
       social: {
         linkedin: "https://www.linkedin.com/in/satyam-kumar-51a413299/",
         github: "https://github.com/satyamsharma804",
@@ -51,7 +51,7 @@ const MeetOurTeam = () => {
       name: "Satyam Kumar",
       role: "Frontend Developer",
       photo: satyamImage,
-      bio: "Prince is our frontend wizard in his 3rd year of BTech CSE at LPU. With expertise in React.js and Tailwind CSS, he transforms designs into responsive interactive experiences while ensuring seamless integration with our PHP backend for our travel planner website.",
+      bio: "Satyam is our frontend wizard in his 3rd year of BTech CSE at LPU. With expertise in React.js and Tailwind CSS, he transforms designs into responsive interactive experiences while ensuring seamless integration with our PHP backend for our travel planner website.",
       social: {
         linkedin: "https://www.linkedin.com/in/satyam-kumar-51a413299/",
         github: "https://github.com/satyamsharma804",
