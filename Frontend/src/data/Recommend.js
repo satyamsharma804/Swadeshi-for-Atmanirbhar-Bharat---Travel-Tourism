@@ -12,7 +12,7 @@ export const destinations = [
     description: "Explore the dramatic high-altitude beauty of Ladakh, ride across Khardung La, and witness the turquoise waters of Pangong Tso.",
     cost: "24999",
     duration: "6 days",
-    distance: "1,050 km",
+    distance: "1,010 km from New Delhi",
     rating: 4.9,
     reviews: 6200,
     tripHighlights: [
@@ -35,7 +35,7 @@ export const destinations = [
     description: "Immerse yourself in colonial charm, ride the historic UNESCO Himalayan Toy Train, and sip world-famous orthodox Darjeeling tea.",
     cost: "16999",
     duration: "4 days",
-    distance: "620 km",
+    distance: "65 km from Siliguri",
     rating: 4.8,
     reviews: 4900,
     tripHighlights: [
@@ -58,7 +58,7 @@ export const destinations = [
     description: "This magnificent white marble mausoleum was built by Emperor Shah Jahan in memory of his wife Mumtaz Mahal.",
     cost: "9999",
     duration: "2 hours",
-    distance: "8,000 km",
+    distance: "210 km from New Delhi",
     rating: 4.9,
     reviews: 5500,
     tripHighlights: [
@@ -82,7 +82,7 @@ export const destinations = [
     description: "Manali is famous for its breathtaking landscapes, adventure sports, and vibrant culture.",
     cost: "14999",
     duration: "3 days",
-    distance: "500 km",
+    distance: "500 km from New Delhi",
     rating: 4.8,
     reviews: 4800,
     tripHighlights: [
@@ -105,7 +105,7 @@ export const destinations = [
     description: "Shimla is known for its scenic beauty, Mall Road, Ridge, and colonial architecture.",
     cost: "12999",
     duration: "3 days",
-    distance: "400 km",
+    distance: "350 km from New Delhi",
     rating: 4.7,
     reviews: 4600,
     tripHighlights: [
@@ -128,7 +128,7 @@ export const destinations = [
     description: "Jaipur is home to magnificent palaces, forts, and bustling markets, making it a must-visit destination.",
     cost: "15999",
     duration: "2 days",
-    distance: "300 km",
+    distance: "280 km from New Delhi",
     rating: 4.8,
     reviews: 5200,
     tripHighlights: [
@@ -153,7 +153,7 @@ export const destinations = [
     description: "Goa offers stunning beaches, vibrant nightlife, water sports, and delicious seafood.",
     cost: "19999",
     duration: "4 days",
-    distance: "600 km",
+    distance: "580 km from Mumbai",
     rating: 4.9,
     reviews: 7000,
     tripHighlights: [
@@ -177,7 +177,7 @@ export const destinations = [
     description: "The Kerala backwaters are a network of serene lakes, canals, and rivers with picturesque houseboats.",
     cost: "24999",
     duration: "3 days",
-    distance: "1200 km",
+    distance: "65 km from Kochi",
     rating: 4.8,
     reviews: 4800,
     tripHighlights: [
@@ -200,7 +200,7 @@ export const destinations = [
     description: "Varanasi is known for its ghats, temples, and spiritual significance, making it a must-visit for seekers.",
     cost: "12999",
     duration: "2 days",
-    distance: "700 km",
+    distance: "320 km from Lucknow",
     rating: 4.7,
     reviews: 4500,
     tripHighlights: [
@@ -223,7 +223,7 @@ export const destinations = [
     description: "Dharamshala is famous for its spiritual ambiance, monasteries, and beautiful trekking spots.",
     cost: "9999",
     duration: "2-3 days",
-    distance: "510 km",
+    distance: "480 km from New Delhi",
     rating: 4.7,
     reviews: 3600
   },
@@ -241,7 +241,7 @@ export const destinations = [
     description: "Chandratal is known for its crescent shape and stunning natural beauty, ideal for camping and photography.",
     cost: "12999",
     duration: "2 days",
-    distance: "850 km",
+    distance: "120 km from Manali",
     rating: 4.9,
     reviews: 2500,
     tripHighlights: [
@@ -265,7 +265,7 @@ export const destinations = [
     description: "Mysore is rich in history, culture, and art, and is famous for Dussehra celebrations.",
     cost: "13999",
     duration: "2 days",
-    distance: "800 km",
+    distance: "145 km from Bengaluru",
     rating: 4.7,
     reviews: 4100,
     tripHighlights: [
@@ -289,7 +289,7 @@ export const destinations = [
     description: "Hampi showcases the architectural brilliance of the Vijayanagara Empire amidst a surreal landscape.",
     cost: "14999",
     duration: "2 days",
-    distance: "1100 km",
+    distance: "340 km from Bengaluru",
     rating: 4.8,
     reviews: 3000,
     tripHighlights: [
@@ -313,7 +313,7 @@ export const destinations = [
     description: "Pondicherry is famous for its spiritual ambiance, colorful streets, and coastal charm.",
     cost: "15999",
     duration: "3 days",
-    distance: "1000 km",
+    distance: "150 km from Chennai",
     rating: 4.8,
     reviews: 3500,
     tripHighlights: [
@@ -337,7 +337,7 @@ export const destinations = [
     description: "Kanyakumari is known for its stunning sunrises, spiritual landmarks, and confluence of oceans.",
     cost: "13999",
     duration: "2 days",
-    distance: "1400 km",
+    distance: "90 km from Thiruvananthapuram",
     rating: 4.7,
     reviews: 3200,
     tripHighlights: [
@@ -360,7 +360,7 @@ export const destinations = [
     description: "Experience spiritual bliss with the divine evening Ganga Aarti, exhilarating whitewater rapids, and serene Himalayan yoga ashrams.",
     cost: "9999",
     duration: "3 days",
-    distance: "240 km",
+    distance: "240 km from New Delhi",
     rating: 4.9,
     reviews: 7300,
     tripHighlights: [
@@ -383,7 +383,7 @@ export const destinations = [
     description: "Step into royal Mewar history with grand lakeside palaces, intricately carved temples, and serene boat cruises on Lake Pichola.",
     cost: "18999",
     duration: "4 days",
-    distance: "660 km",
+    distance: "390 km from Jaipur",
     rating: 4.9,
     reviews: 6100,
     tripHighlights: [
@@ -406,7 +406,7 @@ export const destinations = [
     description: "Discover India's premier tropical island sanctuary, featuring world-class scuba diving, historic Cellular Jail, and Radhanagar Beach.",
     cost: "29999",
     duration: "5 days",
-    distance: "1,200 km",
+    distance: "Air or Sea from Chennai / Kolkata",
     rating: 4.9,
     reviews: 5800,
     tripHighlights: [
