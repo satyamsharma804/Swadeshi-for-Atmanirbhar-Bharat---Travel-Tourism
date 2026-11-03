@@ -7,7 +7,8 @@
   "scripts": {
     "start": "node server.js",
     "build": "echo 'Backend ready'",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "seed:destinations": "node seedDestinations.js"
   },
   "keywords": [
     "travel",
